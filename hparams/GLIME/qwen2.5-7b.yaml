@@ -1,0 +1,13 @@
+alg_name: "GLIME"
+model_name: "Qwen/Qwen2.5-7B-Instruct"
+device: 0
+layers: [4, 5, 6, 7, 8]
+mlp_module_tmp: "model.layers.{}.mlp"
+epoch: 3
+replay_batch: 3
+replay_loss_weight: 0.1
+sft_loss_weight: 1.0
+dpo_loss_weight: 1.0
+basis_k: 256
+basis_max_rank: 1024
+model_parallel: true
